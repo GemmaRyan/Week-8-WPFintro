@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.Eventing.Reader;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,11 +24,35 @@ namespace Ex._6
 
         private void btnClick_Click(object sender, RoutedEventArgs e)
         {
-            string input = txtInput.Text;
 
+            string input = txtInput.Text;
             
             int number;
             bool isNum = int.TryParse(input, out number);
+
+            double oddOrEven = number % 2;
+
+            if (oddOrEven != 0 && isNum == true)
+            {
+                txtblkResult.Text = "Odd number";
+                txtblkResult.Foreground = Brushes.Red;
+            }
+            else if (oddOrEven == 0 && isNum == true)
+            {
+                txtblkResult.Text = "Even number";
+                txtblkResult.Foreground = Brushes.Green;
+            }
+            else if (isNum == false)
+            { 
+                MessageBox.Show($"Incorrect Formatt, try again"); 
+                txtblkResult.Foreground = Brushes.Gray; 
+            }
+        }
+
+        private void txtInput_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtInput.Clear();
+           
         }
     }
 }

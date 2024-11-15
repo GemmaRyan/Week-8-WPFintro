@@ -39,5 +39,10 @@ namespace Ex._2
 
 
         }
+
+        private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

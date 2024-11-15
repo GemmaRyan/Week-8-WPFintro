@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtInput" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" Text="Enter Number" VerticalAlignment="Top" Width="156" Height="36"/>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" Text="Enter Number" VerticalAlignment="Top" Width="156" Height="36" GotFocus="txtInput_GotFocus"/>
         <TextBlock x:Name="txtblkResult" HorizontalAlignment="Center" Margin="0,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="156"/>
         <Button x:Name="btnClick" Content="Button" HorizontalAlignment="Center" Margin="0,183,0,0" VerticalAlignment="Top" Height="34" Width="120" Click="btnClick_Click"/>
 
