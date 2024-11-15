@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ex._4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex._4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.515,0.588">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Margin="77,64,0,0" TextWrapping="Wrap" Text="Enter Number Here" VerticalAlignment="Top" Width="158" Height="42" Drop="txtInput_Drop" GotFocus="txtInput_GotFocus" Grid.Column="1"/>
+        <Button x:Name="btnButton1" Content="Click Here" HorizontalAlignment="Left" Margin="101,147,0,0" VerticalAlignment="Top" Height="53" Width="110" Click="btnButton1_Click" Grid.Column="1"/>
+        <TextBlock x:Name="txtblkMessage" HorizontalAlignment="Left" Margin="71,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="170" Grid.Column="1"/>
+
+    </Grid>
+</Window>

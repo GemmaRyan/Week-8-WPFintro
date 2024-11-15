@@ -1,0 +1,14 @@
+﻿<Window x:Class="Ex._3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex._3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.498,0.585">
+        <Button x:Name="btnRoll" Content="Roll" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Height="50" Width="128" Click="btnRoll_Click"/>
+        <TextBlock x:Name="txtblkResult" HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="106" RenderTransformOrigin="0.524,0.442" FontSize="48" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
